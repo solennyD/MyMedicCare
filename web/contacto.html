@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - MedicCare</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a.active {
+            text-decoration: underline;
+        }
+
+        section {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px;
+        }
+
+        article {
+            flex: 2;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        aside {
+            flex: 1;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .contact-info div {
+            flex: 1;
+            padding: 10px;
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contacto</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="sobre_nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="contacto.html" class="active">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <article>
+            <h2>Información de Contacto</h2>
+            <p>Estamos aquí para ayudarte. Si tienes alguna pregunta o comentario, no dudes en ponerte en contacto con nosotros.</p>
+            <div class="contact-info">
+                <div>
+                    <h3>Oficina Central</h3>
+                    <p>Dirección: Av. Principal, Edificio MedicCare, Piso 5, Santo Domingo, Republica Dominican</p>
+                    <p>Teléfono: +1 849 555 1234</p>
+                    <p>Correo Electrónico: info@mediccare.com</p>
+                </div>
+                <div>
+                    <h3>Sucursal Este</h3>
+                    <p>Dirección: Av. Este, Centro Comercial MedicCare, Piso 2, Santo Domingo, Republica Dominican</p>
+                    <p>Teléfono: +1 809 555 5678</p>
+                    <p>Correo Electrónico: este@mediccare.com</p>
+                </div>
+                <div>
+                    <h3>Sucursal Oeste</h3>
+                    <p>Dirección: Av. Oeste, Centro Comercial Oeste, Piso 3, Santo Domingo, Republica Dominicana</p>
+                    <p>Teléfono: +1 829 555 9012</p>
+                    <p>Correo Electrónico: oeste@mediccare.com</p>
+                </div>
+            </div>
+        </article>
+        <aside>
+            <h2>¿Qué es MedicCare?</h2>
+            <p>MedicCare es una empresa líder en el sector de la salud, dedicada a proporcionar servicios médicos de alta calidad a nuestros pacientes. Nuestro objetivo es garantizar el bienestar y la satisfacción de quienes confían en nosotros para su atención médica.</p>
+        </aside>
+    </section>
+    <footer>
+        <p>&copy; 2024 MedicCare. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
