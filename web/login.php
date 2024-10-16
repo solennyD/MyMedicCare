@@ -1,4 +1,5 @@
 <?php
+//Inicio de session 
 session_start();
 
 // Manejo de inicio de sesión
