@@ -50,7 +50,7 @@
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li><a href="./user.php" class="nav-btn"><i class='glyphicon glyphicon-started-alt'></i> Inicio</a></li>
+                    <li><a href="./pagina_de_administrador.php" class="nav-btn"><i class='glyphicon glyphicon-started-alt'></i> Inicio</a></li>
                     <li class="active"><a href="prestadores.php" class="nav-btn"><i class='glyphicon glyphicon-user'></i> Prestadores <span class="sr-only">(current)</span></a></li>
                     <li><a href="farmacias.html" onclick="frmCliente()" class="nav-btn"> <i class='glyphicon glyphicon-plus-sign'></i> Farmacias</a></li>
                     <li><a href="hospitales.php" onclick="frmCliente()" class="nav-btn"> <i class='glyphicon glyphicon-user'></i> Hospitales</a></li>

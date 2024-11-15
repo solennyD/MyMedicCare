@@ -58,11 +58,38 @@
             </div>
  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="./user.php" class="nav-btn"><i class='glyphicon glyphicon-list-alt'></i> Inicio <span class="sr-only">(current)</span></a></li>
-                    <li><a href="../web/login.php" class="nav-btn"><i class='glyphicon glyphicon-off'></i> Cerrar Seccion</a></li>
+                    <li class="active"><a href="http://localhost/Medic Care/web/nuevocliente.php" class="nav-btn"><i class='glyphicon glyphicon-list-alt'></i> Inicio <span class="sr-only">(current)</span></a></li>
+                    
+              
+                    <li><a href="usuario.php" onclick="frmCliente()" class="nav-btn"> <i class='glyphicon glyphicon-user'></i> Usuarios</a></li>
+
+                    <li><a href="historalMedico.html" onclick="frmCliente()" class="nav-btn"> <i class='glyphicon glyphicon-user'></i> Historial medico</a></li>
+                                     <li class="dropdown">
+    <a href="#" class="dropdown-toggle nav-btn" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class='glyphicon glyphicon-user'></i>  Hospitales <span class="caret"></span></a>
+    <ul class="dropdown-menu">
      
+        <li><a href="eliminarHospital.php">Eliminar Hospitales</a></li>
+        <li><a href="agregarHospital.html">Agregar Hospitales</a></li>
+       
     </ul>
-</li>     
+</li>
+
+                   
+                     <li class="dropdown">
+    <a href="#" class="dropdown-toggle nav-btn" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class='glyphicon glyphicon-user'></i>  Dependiente <span class="caret"></span></a>
+    <ul class="dropdown-menu">
+        <li><a href="revisar_dependiente.php">Revisar dependiente</a></li>
+        <li><a href="verdependiente.php">Ver dependiente</a></li>
+        <li><a href="eliminardependiente.php">Eliminar dependiente</a></li>
+    </ul>
+</li>
+
+                    
+                     <li><a href="../web/loginadmin.php" class="nav-btn"><i class='glyphicon glyphicon-off'></i> Cerrar Seccion</a></li>
+
+                </ul>
+       
+            </div>
         </div>
     </nav>
    </div>

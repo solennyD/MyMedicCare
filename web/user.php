@@ -112,7 +112,7 @@ $consulta_nombre->close();
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="http://localhost/Medic Care/web/elegir_plan.php" class="nav-btn"><i class='glyphicon glyphicon-list-alt'></i> Plan <span class="sr-only">(current)</span></a></li>
                     <li><a href="modificarPerfil.php" onclick="frmCliente()" class="nav-btn"> <i class='glyphicon glyphicon-user'></i> Mi Perfil</a></li>
-                    <li><a href="prestadores.php" onclick="frmCliente()" class="nav-btn"> <i class='glyphicon glyphicon-user'></i> Prestadores</a></li>
+                    
 
                         <li class="nav-btn"><a href="./consumos.php" class="nav-btn"><i class='glyphicon glyphicon-list'></i> Consumos <span class="sr-only">(current)</span></a></li>
                         <ul class="dropdown-menu">
