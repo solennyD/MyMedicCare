@@ -69,8 +69,8 @@
         .servicio .mas-informacion {
             margin-top: 10px;
         }
-        /* Estilo para el logo */
-        }
+       
+        
         /* Estilo para el logo */
         .logo-container {
             background-color: white;
@@ -85,6 +85,7 @@
             height: 70%;
             margin-top: -20px;
         /* Estilo para alinear la barra de navegación */
+        }
         .navbar-nav {
             margin-top: 10px;
             text-align: center;
@@ -167,7 +168,7 @@
         <p>¿Ya eres usuario de Más Futuro? <a href="login.php">Acceder</a></p>
     </div>
 </div>
-    </header>
+</header>
 
 
 <div class="navbar navbar-default navbar-fixed-bottom">
