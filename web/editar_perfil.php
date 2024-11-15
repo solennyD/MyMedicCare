@@ -135,7 +135,7 @@ $conn->close();
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="http://localhost/Medic Care/web/user.php" class="nav-btn"><i class='glyphicon glyphicon-start-alt'></i> Inicio <span class="sr-only">(current)</span></a></li>
+                    <li class="active"><a href="user.php" class="nav-btn"><i class='glyphicon glyphicon-start-alt'></i> Inicio <span class="sr-only">(current)</span></a></li>
                     <li><a href=""  class="nav-btn"> <i class='glyphicon glyphicon-user'></i> Mi Perfil</a></li>
                     <li><a href="prestadores.php" onclick="frmCliente()" class="nav-btn"> <i class='glyphicon glyphicon-user'></i> Prestadores</a></li>
                     <li class="dropdown">
