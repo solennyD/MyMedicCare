@@ -33,6 +33,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 
 header("Location: loginadmin.php"); // Redirigir en caso de que el inicio de sesión falle
-echo "Datos incorrectos";
+
 exit();
 ?>
