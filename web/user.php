@@ -114,7 +114,7 @@ $consulta_nombre->close();
                     <li><a href="modificarPerfil.php" onclick="frmCliente()" class="nav-btn"> <i class='glyphicon glyphicon-user'></i> Mi Perfil</a></li>
                     <li><a href="prestadores.php" onclick="frmCliente()" class="nav-btn"> <i class='glyphicon glyphicon-user'></i> Prestadores</a></li>
 
-                        <li class="nav-btn"><a href="http://localhost/Medic Care/web/consumos.php" class="nav-btn"><i class='glyphicon glyphicon-list'></i> Consumos <span class="sr-only">(current)</span></a></li>
+                        <li class="nav-btn"><a href="./consumos.php" class="nav-btn"><i class='glyphicon glyphicon-list'></i> Consumos <span class="sr-only">(current)</span></a></li>
                         <ul class="dropdown-menu">
                             <li><a href="medicamentos.php"><i class='glyphicon glyphicon-heart'></i> Medicamentos</a></li>
                             <li><a href="reembolso.html"><i class='glyphicon glyphicon-usd'></i> Reembolso</a></li>
