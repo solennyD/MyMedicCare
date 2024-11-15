@@ -97,7 +97,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
 </header>
      <script>
         document.getElementById("registerButton").addEventListener("click", function() {
-            window.location.href = "login.php";
+            window.location.href = "loginadmin.php";
         });
     </script>
 
