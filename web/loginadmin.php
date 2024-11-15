@@ -86,6 +86,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
                 <!--<div class="button-container">
                     <input type="button" class="btn btn-primary" id="registerButton" value="Cambiar Rol">
                 </div>-->
+                <br>
+                <div class="buttonAc">
+                <a href="./addadmin.php" class="btn primary">¿Aún no tienes una cuenta?</a> 
             </fieldset>
             <div class="error"><?php echo isset($error) ? $error : ""; ?></div>
         </form>
