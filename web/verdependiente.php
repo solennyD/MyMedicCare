@@ -86,7 +86,7 @@ $result = $stmt->get_result();
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="http://localhost/Medic Care/web/nuevocliente.php" class="nav-btn"><i class='glyphicon glyphicon-list-alt'></i> Inicio <span class="sr-only">(current)</span></a></li>
+                    <li class="active"><a href="./pagina_de_administrador.php" class="nav-btn"><i class='glyphicon glyphicon-list-alt'></i> Inicio <span class="sr-only">(current)</span></a></li>
                     
               
                     <li><a href="" onclick="frmCliente()" class="nav-btn"> <i class='glyphicon glyphicon-user'></i> Mi Perfil</a></li>
