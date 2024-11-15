@@ -65,7 +65,7 @@
 
                     <li><a href="historalMedico.html" onclick="frmCliente()" class="nav-btn"> <i class='glyphicon glyphicon-user'></i> Historial medico</a></li>
                                      <li class="dropdown">
-    <a href="#" class="dropdown-toggle nav-btn" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class='glyphicon glyphicon-user'></i>  Clincas <span class="caret"></span></a>
+    <a href="#" class="dropdown-toggle nav-btn" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class='glyphicon glyphicon-user'></i>  Clinicas <span class="caret"></span></a>
     <ul class="dropdown-menu">
      
         <li><a href="eliminarClinica.php">Eliminar clinicas</a></li>
