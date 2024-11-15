@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Registro Exitoso</title>
-    <meta http-equiv="refresh" content="2;url=login.php"> <!-- Redirigir después de 2 segundos -->
+    <meta http-equiv="refresh" content="2;url=loginadmin.php"> <!-- Redirigir después de 2 segundos -->
     <style>
         .mensaje {
             background-color: #4CAF50; /* Color azul */
