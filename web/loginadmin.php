@@ -88,7 +88,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
                 </div>-->
                 <br>
                 <div class="buttonAc">
-                <a href="./addadmin.php" class="btn primary">¿Aún no tienes una cuenta?</a> 
+                <a href="./addadmin.php" class="btn primary">Agregar administrador</a> 
             </fieldset>
             <div class="error"><?php echo isset($error) ? $error : ""; ?></div>
         </form>
