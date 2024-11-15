@@ -65,12 +65,6 @@ if (!isset($_SESSION["usuario"])) {
                     <li><a href="prestadores.php" onclick="frmCliente()" class="nav-btn"> <i class='glyphicon glyphicon-user'></i> Prestadores</a></li>
 
                        
-                        <ul class="dropdown-menu">
-                            <li><a href="medicamentos.php"><i class='glyphicon glyphicon-heart'></i> Medicamentos</a></li>
-                            <li><a href="reembolso.html"><i class='glyphicon glyphicon-usd'></i> Reembolso</a></li>
-                            <li><a href="#"><i class='glyphicon glyphicon-list-alt'></i> Consultas</a></li>
-                        </ul>
-                    </li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle nav-btn" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class='glyphicon glyphicon-edit'></i> Solicitudes <span class="caret"></span></a>
                         <ul class="dropdown-menu">
