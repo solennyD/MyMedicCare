@@ -137,24 +137,7 @@ $conn->close();
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="user.php" class="nav-btn"><i class='glyphicon glyphicon-start-alt'></i> Inicio <span class="sr-only">(current)</span></a></li>
                     <li><a href=""  class="nav-btn"> <i class='glyphicon glyphicon-user'></i> Mi Perfil</a></li>
-                    <li><a href="prestadores.php" onclick="frmCliente()" class="nav-btn"> <i class='glyphicon glyphicon-user'></i> Prestadores</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle nav-btn" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class='glyphicon glyphicon-list'></i> Consumos <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="medicamentos.php"><i class='glyphicon glyphicon-heart'></i> Medicamentos</a></li>
-                            <li><a href="reembolso.html"><i class='glyphicon glyphicon-usd'></i> Reembolso</a></li>
-                            <li><a href="#"><i class='glyphicon glyphicon-list-alt'></i> Consultas</a></li>
-                        </ul>
-                    </li>
-                   <li class="dropdown">
-                        <a href="#" class="dropdown-toggle nav-btn" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class='glyphicon glyphicon-edit'></i> Solicitudes <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="verdependiente.php"><i class='glyphicon glyphicon-user'></i> Dependientes</a></li>
-                            <li><a href="visualizar_solicitud_reembolso.php"><i class='glyphicon glyphicon-usd'></i> Ver solicitud de Reembolso</a></li>
-                            <li><a href="visualizar_preautorizaciones.php"><i class='glyphicon glyphicon-usd'></i> Solicitud Preautorizaciones</a></li>
-                            <li><a href="visualizar_nuevos_productos.php"><i class='glyphicon glyphicon-shopping-cart'></i> Solicitud de Nuevos Productos</a></li>
-                        </ul>
-                    </li>
+                    
 
                     <li><a href="../web/login.php" class="nav-btn"><i class='glyphicon glyphicon-off'></i> Cerrar Sección</a></li>
                 </ul>

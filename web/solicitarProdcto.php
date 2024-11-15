@@ -118,7 +118,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["nombre_producto"]) && 
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="http://localhost/Medic Care/web/elegir_plan.php" class="nav-btn"><i class='glyphicon glyphicon-list-alt'></i> Plan <span class="sr-only">(current)</span></a></li>
                     <li><a href="modificarPerfil.php" onclick="frmCliente()" class="nav-btn"> <i class='glyphicon glyphicon-user'></i> Mi Perfil</a></li>
-                    <li><a href="polizas.php" onclick="frmCliente()" class="nav-btn"> <i class='glyphicon glyphicon-user'></i> Prestadores</a></li>
+                    <li><a href="polizas.php" onclick="frmCliente()" class="nav-btn"> <i class='glyphicon glyphicon-user'></i> Mi poliza</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle nav-btn" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class='glyphicon glyphicon-list'></i> Consumos <span class="caret"></span></a>
                         <ul class="dropdown-menu">

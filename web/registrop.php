@@ -1,5 +1,6 @@
 <?php
-// Conexión a la base de datos
+// Conexión a la base de datos del archivo registro
+
 $servername = "localhost";
 $username = "root";
 $password = "";
