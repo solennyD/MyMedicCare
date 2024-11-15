@@ -32,6 +32,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $conexion->close();
 }
 
-header("Location: login_administrador.php"); // Redirigir en caso de que el inicio de sesión falle
+header("Location: loginadmin.php"); // Redirigir en caso de que el inicio de sesión falle
+echo "Datos incorrectos";
 exit();
 ?>
