@@ -150,7 +150,7 @@ $conn->close();
                         <a href="#" class="dropdown-toggle nav-btn" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class='glyphicon glyphicon-edit'></i> Solicitudes <span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="verdependiente.php"><i class='glyphicon glyphicon-user'></i> Dependientes</a></li>
-                            <li><a href="visualizar_solicitud_reembolso.php"><i class='glyphicon glyphicon-usd'></i> ver solicitud de Reembolso</a></li>
+                            <li><a href="visualizar_solicitud_reembolso.php"><i class='glyphicon glyphicon-usd'></i> Ver solicitud de Reembolso</a></li>
                             <li><a href="visualizar_preautorizaciones.php"><i class='glyphicon glyphicon-usd'></i> Solicitud Preautorizaciones</a></li>
                             <li><a href="visualizar_nuevos_productos.php"><i class='glyphicon glyphicon-shopping-cart'></i> Solicitud de Nuevos Productos</a></li>
                         </ul>
