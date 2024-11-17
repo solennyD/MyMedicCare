@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Administracion de clinicas</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="../img/imag.png"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/custom.css">
+    <link rel="stylesheet" href="../css/bootstrap-responsive.min.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Varela+Round">
+
+    <style>
+        /* Estilos adicionales */
+        body {
+            background-color: #f8f8f8;
+        }
+        .form-container {
+            margin: 0 auto; /* Centrar horizontalmente */
+            max-width: 500px; /* Ancho máximo del formulario */
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        form {
+            text-align: center; /* Centrar los elementos del formulario */
+        }
+        label {
+            display: block; /* Colocar cada etiqueta en una línea nueva */
+            margin-bottom: 10px; /* Espacio entre etiquetas */
+            font-weight: bold; /* Hacer que las etiquetas sean más prominentes */
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="submit"] {
+            width: 100%; /* Ajustar el ancho de los campos de entrada y botones al 100% del contenedor */
+            padding: 10px; /* Aumentar el relleno para una mejor apariencia */
+            margin-bottom: 20px; /* Espacio entre los campos de entrada */
+            border-radius: 3px; /* Bordes redondeados */
+            border: 1px solid #ccc; /* Borde delgado */
+            box-sizing: border-box; /* Incluir el borde en el ancho total */
+        }
+        input[type="submit"] {
+            background-color: #337ab7; /* Color de fondo del botón */
+            color: #fff; /* Color de texto del botón */
+            border: none; /* Sin borde */
+            cursor: pointer; /* Cursor de puntero al pasar por encima */
+        }
+        input[type="submit"]:hover {
+            background-color: #286090; /* Color de fondo del botón al pasar el mouse */
+        }
+    </style>
+</head>
+<nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+ <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="pagina_de_administrador.php" class="nav-btn"><i class='glyphicon glyphicon-list-alt'></i> Inicio <span class="sr-only">(current)</span></a></li>
+                    
+              
+                    <li><a href="usuario.php" onclick="frmCliente()" class="nav-btn"> <i class='glyphicon glyphicon-user'></i> Usuarios</a></li>
+                                     
+                   
+                     <li class="dropdown">
+    <a href="#" class="dropdown-toggle nav-btn" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class='glyphicon glyphicon-user'></i>  Dependiente <span class="caret"></span></a>
+    <ul class="dropdown-menu">
+        <li><a href="revisar_dependiente.php">Revisar dependiente</a></li>
+        <li><a href="verdependiente.php">Ver dependiente</a></li>
+        <li><a href="eliminardependiente.php">Eliminar dependiente</a></li>
+    </ul>
+</li>
+
+                    
+                     <li><a href="../web/loginadmin.php" class="nav-btn"><i class='glyphicon glyphicon-off'></i> Cerrar Seccion</a></li>
+
+                </ul>
+       
+            </div>
+        </div>
+    </nav>
+   </div>
+<body>
+    <h2 class="welcome-message">Administración de Clínicas</h2>
+
+    <div class="form-container">
+        <h3>Agregar Clínica</h3>
+        <form action="agregar_clinica.php" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br>
+            
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion" name="direccion" required><br>
+            
+            <label for="telefono">Teléfono:</label>
+            <input type="text" id="telefono" name="telefono" required><br>
+            
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo" required><br>
+            
+            <input type="submit" value="Agregar">
+        </form>
+
+        <h3>Eliminar Clínica</h3>
+        <form action="eliminar_clinica.php" method="post">
+            <label for="id_eliminar">ID de la Clínica a Eliminar:</label>
+            <input type="text" id="id_eliminar" name="id_eliminar" required><br>
+            
+            <input type="submit" value="Eliminar">
+        </form>
+    </div>
+
+    <script src="../js/scripts.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+</body>
+</html>

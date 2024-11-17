@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmacias</title>
+     <button onclick="window.history.back()" class="btn btn-primary btn-volver-atras">
+    <span class="glyphicon glyphicon-arrow-left"></span> Volver atrás
+</button>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="../img/imag.png"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/custom.css">
+    <link rel="stylesheet" href="../css/bootstrap-responsive.min.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Varela+Round">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        /* Estilos personalizados */
+        .farmacia-container {
+            margin-top: 50px;
+        }
+        .farmacia {
+            margin-bottom: 50px;
+        }
+        .farmacia img {
+            max-width: 100%;
+            height: auto;
+        }
+        .farmacia-info {
+            margin-top: 20px;
+        }
+        .panel-heading {
+            background-color: #d9edf7; /* Color de la barra verde claro */
+            border-color: #bce8f1; /* Color del borde */
+            color: #31708f; /* Color del texto */
+            position: relative;
+        }
+        .btn-volver-atras {
+            position: absolute;
+            left: 10px;
+            top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1 class="text-center">Farmacias</h1>
+
+    <div class="farmacia-container">
+        <!-- Farmacia 1 -->
+        <div class="farmacia panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Farmacia Carol</h3>
+               
+            </div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="../img/farmacia_carol.jpg" alt="Farmacia Carol">
+                    </div>
+                    <div class="col-md-6 farmacia-info">
+                        <p><strong>Dirección:</strong> Calle El Conde #105, Santo Domingo</p>
+                        <p><strong>Teléfono:</strong> 809-111-2222</p>
+                        <p><strong>Correo Electrónico:</strong> info@farmaciacarol.com.do</p>
+                        <p><strong>Ofrecemos:</strong> Medicamentos de alta calidad, atención personalizada.</p>
+                        <!-- Agrega más información  -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Farmacia 2 -->
+        <div class="farmacia panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Farmacia Los Hidalgos</h3>
+               
+            </div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="../img/farmacia_los_hidalgos.jpg" alt="Farmacia Los Hidalgos">
+                    </div>
+                    <div class="col-md-6 farmacia-info">
+                        <p><strong>Dirección:</strong> Avenida Charles de Gaulle #45, Santo Domingo Este</p>
+                        <p><strong>Teléfono:</strong> 809-333-4444</p>
+                        <p><strong>Correo Electrónico:</strong> info@farmacialoshidalgos.com.do</p>
+                        <p><strong>Ofrecemos:</strong> Amplia variedad de medicamentos y productos de cuidado personal.</p>
+                        <!-- Agrega más información  -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Farmacia 3 -->
+        <div class="farmacia panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Farmacia Inca</h3>
+              
+            </div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="../img/farmacia_inca.jpg" alt="Farmacia Inca">
+                    </div>
+                    <div class="col-md-6 farmacia-info">
+                        <p><strong>Dirección:</strong> Calle José Martí #25, Santiago de los Caballeros</p>
+                        <p><strong>Teléfono:</strong> 809-555-6666</p>
+                        <p><strong>Correo Electrónico:</strong> info@farmaciainca.com.do</p>
+                        <p><strong>Ofrecemos:</strong> Amplia gama de medicamentos y servicios de atención al cliente.</p>
+                        <!-- Agrega más información según -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Farmacia 4 -->
+        <div class="farmacia panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Farmacia San Miguel</h3>
+               
+            </div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="../img/farmacia_san_miguel.jpg" alt="Farmacia San Miguel">
+                    </div>
+                    <div class="col-md-6 farmacia-info">
+                        <p><strong>Dirección:</strong> Avenida Estrella Sadhalá, Santiago de los Caballeros</p>
+                        <p><strong>Teléfono:</strong> 809-777-8888</p>
+                        <p><strong>Correo Electrónico:</strong> info@farmaciasanmiguel.com.do</p>
+                        <p><strong>Ofrecemos:</strong> Servicios de farmacia y atención médica de calidad.</p>
+                        <!-- Agrega más información  -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Farmacia 5 -->
+        <div class="farmacia panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Farmacia La Hora</h3>
+                
+            </div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="../img/farmacia_la_hora.jpg" alt="Farmacia La Hora">
+                    </div>
+                    <div class="col-md-6 farmacia-info">
+                        <p><strong>Dirección:</strong> Avenida Winston Churchill #205, Santo Domingo</p>
+                        <p><strong>Teléfono:</strong> 809-888-9999</p>
+                        <p><strong>Correo Electrónico:</strong> info@farmacialahora.com.do</p>
+                        <p><strong>Ofrecemos:</strong> Medicamentos y servicios farmacéuticos de calidad.</p>
+                        <!-- Agrega más información  -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Agrega más farmacias  -->
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

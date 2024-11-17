@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Administración de Historial Médico</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="../img/imag.png"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/custom.css">
+    <link rel="stylesheet" href="../css/bootstrap-responsive.min.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Varela+Round">
+
+   <style>
+       body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        h2 {
+            margin-top: 50px;
+        }
+        form {
+            display: inline-block;
+            text-align: left;
+            margin-top: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="date"] {
+            width: 250px;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+ <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="modificarPerfil.php" class="nav-btn"><i class='glyphicon glyphicon-user'></i> Perfil<span class="sr-only">(current)</span></a></li>
+                    
+              
+                    <li><a href="usuario.php" onclick="frmCliente()" class="nav-btn"> <i class='glyphicon glyphicon-user'></i> Usuarios</a></li>
+
+                    <li><a href="addadmin.php" onclick="frmCliente()" class="nav-btn"> <i class='glyphicon glyphicon-plus'></i> Nuevo administrador</a></li>
+
+
+                   
+                                     <li class="dropdown">
+    <a href="#" class="dropdown-toggle nav-btn" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class='glyphicon glyphicon-user'></i>  Clincas <span class="caret"></span></a>
+    <ul class="dropdown-menu">
+        <li><a href="ver_clinicas.php">Ver clinicas</a></li>
+        <li><a href="eliminarcitas.php">Eliminar clinicas</a></li>
+        <li><a href="agregarClinica.html">Agregar clinicas</a></li>
+       
+    </ul>
+</li>
+
+ <li class="dropdown">
+                        <a href="#" class="dropdown-toggle nav-btn" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class='glyphicon glyphicon-edit'></i> Solicitudes <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            
+                            <li><a href="visualizar_solicitud_reembolso.php"><i class='glyphicon glyphicon-usd'></i> ver solicitud de Reembolso</a></li>
+                            <li><a href="visualizar_preautorizaciones.php"><i class='glyphicon glyphicon-usd'></i> Solicitud Preautorizaciones</a></li>
+                            <li><a href="visualizar_nuevos_productos.php"><i class='glyphicon glyphicon-shopping-cart'></i> Solicitud de Nuevos Productos</a></li>
+                        </ul>
+                    </li>
+
+                   
+    <li class="dropdown">
+    <a href="#" class="dropdown-toggle nav-btn" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class='glyphicon glyphicon-user'></i>  Dependiente <span class="caret"></span></a>
+    <ul class="dropdown-menu">
+        <li><a href="revisar_dependiente.php">Revisar dependiente</a></li>
+        <li><a href="verdependiente.php">Ver dependiente</a></li>
+        <li><a href="eliminardependiente.php">Eliminar dependiente</a></li>
+    </ul>
+</li>
+
+                    
+                     <li><a href="../web/loginadmin.php" class="nav-btn"><i class='glyphicon glyphicon-off'></i> Salir</a></li>
+
+                </ul>
+       
+            </div>
+        </div>
+    </nav>
+   </div>
+<body>
+    <h2>Administración de Historial Médico</h2>
+
+    <h3>Agregar Registro de Historial Médico</h3>
+    <form action="agregar_historial_medico.php" method="post">
+        <label for="asegurado_id">ID del Asegurado:</label>
+        <input type="text" id="asegurado_id" name="asegurado_id" required><br>
+        
+        <label for="descripcion">Descripción Médica:</label>
+        <input type="text" id="descripcion" name="descripcion" required><br>
+        
+        <label for="fecha_consulta">Fecha de Consulta:</label>
+        <input type="date" id="fecha_consulta" name="fecha_consulta" required><br>
+        
+        <input type="submit" value="Agregar">
+    </form>
+
+    <h3>Eliminar Registro de Historial Médico</h3>
+    <form action="eliminar_historial_medico.php" method="post">
+        <label for="id_eliminar">ID del Registro a Eliminar:</label>
+        <input type="text" id="id_eliminar" name="id_eliminar" required><br>
+        
+        <input type="submit" value="Eliminar">
+    </form>
+
+     <script src="../js/scripts.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+</body>
+</html>
+
