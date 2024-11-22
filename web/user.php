@@ -1,7 +1,6 @@
     <?php
 session_start();
-//session_unset();   // Elimina todas las variables de sesión
-session_destroy(); // Destruye la sesión
+
 
 //evita que se el navegador me guarde cachet
 header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0");
@@ -136,7 +135,15 @@ $consulta_nombre->close();
                             <li><a href="solicitarProdcto.php"><i class='glyphicon glyphicon-shopping-cart'></i> Nuevos Productos</a></li>
                         </ul>
                     </li>
-                    <li><a href="../web/login.php" class="nav-btn"><i class='glyphicon glyphicon-off'></i> Cerrar Sección</a></li>
+                    <li>
+                     <!-- Formulario que enviará una solicitud POST para cerrar sesión -->
+                        <form action="logout.php" method="post" style="display: inline;">
+                        <button type="submit" name="logout" class="nav-btn" style="background: #1A76D1 ;  color: white; cursor: pointer; padding-top: 5% ; margin-top: 5% ;border: none">
+                        <i class='glyphicon glyphicon-off'></i> Cerrar Sesión
+                        </button>
+                    </form>
+                </li>
+
                 </ul>
             </div>
         </div>
