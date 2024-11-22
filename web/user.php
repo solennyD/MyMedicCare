@@ -1,7 +1,13 @@
-
-
     <?php
 session_start();
+//session_unset();   // Elimina todas las variables de sesión
+session_destroy(); // Destruye la sesión
+
+//evita que se el navegador me guarde cachet
+header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0");
+header("Pragma: no-cache");
+//header("Expires: 0");  // Fecha en el pasado
+
 
 // Verificar si el usuario ha iniciado sesión
 if (!isset($_SESSION["usuario"])) {
