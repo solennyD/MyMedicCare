@@ -61,11 +61,92 @@ $conn->close();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elegir Plan - MedicCare</title>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elegir Plan - MedicCare</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f8fc; /* Fondo azul claro */
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        h1 {
+            font-size: 2em;
+            color: #5b8ab2; /* Azul suave para el encabezado */
+            margin-bottom: 20px;
+        }
+
+        form {
+            background-color: rgba(91, 138, 178, 0.1); /* Azul suave con transparencia */
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            text-align: center;
+        }
+
+        label {
+            font-size: 1em;
+            color: #5b8ab2; /* Azul suave */
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        select {
+            width: 50%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco con transparencia */
+            font-size: 1em;
+        }
+
+        input[type="submit"] {
+            width: 70%;
+            padding: 12px;
+            background-color: #5b8ab2; /* Azul claro */
+            border: none;
+            border-radius: 4px;
+            color: white;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #4a7f98; /* Azul más oscuro en hover */
+        }
+
+        .inf{
+            color:black;
+        }
+    </style>
+</head>
+
 </head>
 <body>
-    <h1>Elegir Plan - MedicCare</h1>
+<header>
+        
+        <div class="button">
+        <div class="button" style="position: absolute; top: 10px; left: 10px;">
+            <a href="user.php" class="btn primary" style="display: inline-flex; align-items: center; text-decoration: none; padding: 10px 20px; background-color: #007bff; color: white; font-size: 16px; border-radius: 5px; transition: background-color 0.3s ease;">
+                <i class="fas fa-arrow-left" style="margin-right: 8px;"></i> INICIO
+            </a>
+        </div>
+        </header>
+    
     <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
-        <label for="plan_id">Selecciona tu plan:</label>
+    <h1>Elegir Plan - MedicCare</h1>
+        <label for="plan_id"><h3 class="inf">Selecciona tu plan:</h3></label>
         <select name="plan_id" id="plan_id">
             <?php
             // Mostrar opciones de plan

@@ -54,7 +54,7 @@ if(isset($_SESSION["cedula_pasaporte"])) {
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f8fc; /* Fondo azul claro */
+            background-color: #e0f7fa; /* Azul claro muy suave */
             color: #333;
             margin: 0;
             padding: 0;
@@ -72,22 +72,22 @@ if(isset($_SESSION["cedula_pasaporte"])) {
 
         form {
             background-color: rgba(91, 138, 178, 0.1); /* Azul suave con transparencia */
-            padding: 30px;
+            padding: 40px;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            width: 300px;
+            width: 500px;
             text-align: center;
         }
 
         label {
             font-size: 1em;
-            color: #5b8ab2; /* Azul suave */
+            color: black; /* Azul suave */
             margin-bottom: 5px;
             display: block;
         }
 
         input[type="text"] {
-            width: 100%;
+            width: 70%;
             padding: 10px;
             margin: 10px 0;
             border: 1px solid #ccc;
@@ -97,9 +97,9 @@ if(isset($_SESSION["cedula_pasaporte"])) {
         }
 
         input[type="submit"] {
-            width: 100%;
+            width: 75%;
             padding: 12px;
-            background-color: #5b8ab2; /* Azul claro */
+            background-color: #007bff; /* Azul claro */
             border: none;
             border-radius: 4px;
             color: white;
@@ -121,13 +121,25 @@ if(isset($_SESSION["cedula_pasaporte"])) {
 </head>
 
 <body>
+    <header>
+        
+    <div class="button">
+    <div class="button" style="position: absolute; top: 10px; left: 10px;">
+        <a href="user.php" class="btn primary" style="display: inline-flex; align-items: center; text-decoration: none; padding: 10px 20px; background-color: #007bff; color: white; font-size: 16px; border-radius: 5px; transition: background-color 0.3s ease;">
+            <i class="fas fa-arrow-left" style="margin-right: 8px;"></i> INICIO
+        </a>
+    </div>
+    </header>
+
+
     <?php
     if(isset($error_message)) {
         echo "<p>$error_message</p>";
     }
     ?>
     <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
-        <label for="cedula_pasaporte">Cédula o Pasaporte:</label>
+        <h1>Iniciar Sesión - MedicCare</h1>
+        <label for="cedula_pasaporte"><h3>Cédula o Pasaporte:</h3></label>
         <input type="text" id="cedula_pasaporte" name="cedula_pasaporte" required><br><br>
         <input type="submit" value="Iniciar Sesión">
     </form>
