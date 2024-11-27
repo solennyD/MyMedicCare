@@ -114,7 +114,7 @@ $consulta_nombre->close();
         <li><a href="ver_clinicas.php">Clinicas</a></li>
         <li><a href="centroMedicos.php">Centros Medicos</a></li>
         <li><a href="agregarClinica.html">Farmacias</a></li>
-         <li><a href="prestador.php">Prestadore</a></li>
+         <li><a href="prestador.php">Prestadores</a></li>
           <li><a href="verProveedore.php">Proveedores Medicos</a></li>
            <li><a href="agregarClinica.html">Tratamientos Medicos</a></li>
             <li><a href="agregarClinica.html">Plan</a></li>
