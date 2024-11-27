@@ -443,8 +443,9 @@ body{
 /* Right Bar */
 .header.style2 .main-menu{
 	display:inline-block;
-	float:left;
+	
 }
+
 .header .right-bar {
 	float: right;
 }
@@ -864,9 +865,7 @@ body{
 	background-size:cover;
 	background-repeat:no-repeat;
 }
-.fun-facts .single-fun {
-	
-}
+
 .fun-facts .single-fun i {
 	position: absolute;
 	left: 0;
@@ -939,7 +938,7 @@ body{
 .why-choose .choose-left p{
 	margin-bottom:35px;
 }
-.why-choose .choose-left .list{}
+
 .why-choose .choose-left .list li {
 	color: #868686;
 	margin-bottom: 12px;
@@ -997,7 +996,6 @@ body{
 	height: 200px;
 	background: #fff;
 	opacity: 0;
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 	border-radius: 100%;
 	-webkit-animation: waves 3s ease-in-out infinite;
 	animation: waves 3s ease-in-out infinite;
@@ -1216,7 +1214,7 @@ body{
 	display:inline-block;
 	margin-right:5px;
 }
-.pf-details .body-text{}
+
 .pf-details .body-text h3 {
 	font-size: 30px;
 	font-weight: 600;
@@ -1423,7 +1421,7 @@ body{
 	border-radius: 3px;
 	margin: 0 0 0 -52px;
 	margin-top: 49px;
-	box-sizing: ;
+	
 }
 .testimonials .owl-dots .owl-dot {
 	display: inline-block;
@@ -1507,7 +1505,8 @@ body{
 	color: #868686;
 	margin-top: 3px;
 }
-.departments .department-tab .tab-pane .department-left{}
+/*.departments .department-tab .tab-pane .department-left{}*/
+
 .departments .department-tab .tab-pane .department-left h3{
 	color:#2C2D3F;
 	font-weight:600;
@@ -1533,7 +1532,7 @@ body{
 .departments .department-tab .tab-pane .department-left p {
 	margin-bottom: 20px;
 }
-.departments .department-tab .tab-pane .department-left .list{}
+
 .departments .department-tab .tab-pane .department-left .list li{
 	position:relative;
 	padding-left: 30px;
@@ -1677,9 +1676,7 @@ body{
 	padding:100px 0px;
 	position:relative;
 }
-.clients .single-clients{
-	
-}
+
 .clients .single-clients img {
 	width: 100%;
 	cursor: pointer;
@@ -1881,9 +1878,7 @@ body{
 	color: #2C2D3F;
 	margin-top: 30px;
 }
-.doctor-details-item .doctor-details-work .time-sidual{
-	
-}
+
 .doctor-details-item .doctor-details-work .time-sidual{
 	overflow:hidden;
 }
@@ -1895,7 +1890,6 @@ body{
 }
 .doctor-details-item .doctor-details-work .time-sidual li span{
 	display:inline-block;
-	float:right;
 }
 .doctor-details-item .doctor-details-work .day-head .time {
 	font-weight: 400;
@@ -1906,9 +1900,9 @@ body{
 	padding-left: 60px;
 	padding-top: 70px;
 }
-.doctor-details-item .doctor-details-biography {
+/*.doctor-details-item .doctor-details-biography {
  
-}
+} */
 .doctor-details-item .doctor-details-biography h3 {
   font-weight: 600;
   font-size: 24px;
@@ -2240,7 +2234,7 @@ body{
 	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.10);
 	border-radius: 8px;
 }
-.news-single .news-head{}
+/*.news-single .news-head{}*/
 .news-single .news-head img{
 	width:100%;
 	height:100%;
@@ -2566,8 +2560,8 @@ body{
 	margin-bottom: 20px;
 	text-transform: capitalize;
 }
-.news-single .form {
-}
+/*.news-single .form {
+}*/
 .news-single .form-group {
 	position: relative;
 	display: block;
@@ -2687,18 +2681,18 @@ body{
 	box-shadow: 0px 0px 10px #00000024;
 	border-radius: 5px;
 }
-.appointment.single-page .title{}
+/*.appointment.single-page .title{}*/
 .appointment.single-page .title h3 {
 	font-size: 25px;
 	display: block;
 	margin-bottom: 10px;
 	font-weight:600;
 }
-.appointment.single-page .title p{}
+/*.appointment.single-page .title p{}*/
 .appointment .form{
 	margin-top:30px;
 }
-.appointment .form .form-group{}
+/*.appointment .form .form-group{}*/
 .appointment .form input {
 	width: 100%;
 	height: 50px;
@@ -2752,7 +2746,7 @@ body{
 	color:#fff;
 	background: #1A76D1;
 }
-.appointment .appointment-image{}
+/*.appointment .appointment-image{}*/
 .appointment.single-page .button .btn{
 	width:100%;
 }
@@ -2793,7 +2787,7 @@ body{
 }
 .appointment.single-page .time-sidual li span{
 	display:inline-block;
-	float:right;
+
 }
 .appointment.single-page .day-head .time {
 	font-weight: 400;
@@ -3501,13 +3495,13 @@ body{
 .newsletter{
 	background:#EDF2FF;
 }
-.newsletter .subscribe-text{}
+/*.newsletter .subscribe-text{}*/
 .newsletter .subscribe-text h6{
 	font-size:22px;
 	margin-bottom:10px;
 	color:#2C2D3F;
 }
-.newsletter .subscribe-text p{}
+/*.newsletter .subscribe-text p{}*/
 .newsletter .subscribe-form{
 	position:relative;
 }
@@ -3937,9 +3931,9 @@ body{
 	background:#000;
 	opacity:0.1;
 }
-.footer .single-footer{
+/*.footer .single-footer{
 	
-}
+}*/
 .footer .single-footer .social{
 	margin-top:25px;
 }
@@ -3968,9 +3962,9 @@ body{
 	background:#fff;
 	border-color:transparent;
 }
-.footer .single-footer .social li a i{
+/*.footer .single-footer .social li a i{
 	
-}
+}*/
 .footer .single-footer.f-link li a i{
 	margin-right:10px;
 }
@@ -4026,7 +4020,7 @@ body{
 }
 .footer .single-footer .time-sidual li span{
 	display:inline-block;
-	float:right;
+	
 }
 .footer .single-footer .day-head .time {
 	font-weight: 400;
@@ -4050,7 +4044,7 @@ body{
 	padding-left: 18px;
 	padding-right: 70px;
 	display: inline-block;
-	float: left;
+	/*float: left;*/
 	border-radius: 0px;
 	-webkit-transition: all 0.4s ease;
 	-moz-transition: all 0.4s ease;
