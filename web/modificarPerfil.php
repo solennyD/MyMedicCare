@@ -53,6 +53,7 @@ if(isset($_SESSION["cedula_pasaporte"])) {
     <title>Iniciar Sesión - MedicCare</title>
 </head>
 <body>
+    
     <h1>Iniciar Sesión - MedicCare</h1>
     <?php
     if(isset($error_message)) {
