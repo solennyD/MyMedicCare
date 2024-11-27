@@ -1,5 +1,9 @@
 <?php
 session_start();
+//evita que se el navegador me guarde cachet
+header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0");
+header("Pragma: no-cache");
+//header("Expires: 0");  // Fecha en el pasado
 
 
 if (!isset($_SESSION["usuario"])) {
@@ -46,6 +50,7 @@ if (!isset($_SESSION["usuario"])) {
     </style>
 </head>
 <body>
+
 <nav class="navbar navbar-default">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -58,9 +63,11 @@ if (!isset($_SESSION["usuario"])) {
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="elegir_plan.php" class="nav-btn"><i class='glyphicon glyphicon-list-alt'></i> Plan <span class="sr-only">(current)</span></a></li>
+                    <li class="active"><a href="./elegir_plan.php" class="nav-btn"><i class='glyphicon glyphicon-list-alt'></i> Plan <span class="sr-only">(current)</span></a></li>
                     <li><a href="modificarPerfil.php" onclick="frmCliente()" class="nav-btn"> <i class='glyphicon glyphicon-user'></i> Mi Perfil</a></li>
                     
+
+                        <li class="nav-btn"><a href="./consumos.php" class="nav-btn"><i class='glyphicon glyphicon-list'></i> Consumos <span class="sr-only">(current)</span></a></li>
                         <ul class="dropdown-menu">
                             <li><a href="medicamentos.php"><i class='glyphicon glyphicon-heart'></i> Medicamentos</a></li>
                             <li><a href="reembolso.html"><i class='glyphicon glyphicon-usd'></i> Reembolso</a></li>
