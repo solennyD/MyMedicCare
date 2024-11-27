@@ -51,10 +51,76 @@ if(isset($_SESSION["cedula_pasaporte"])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iniciar Sesión - MedicCare</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f8fc; /* Fondo azul claro */
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        h1 {
+            font-size: 2em;
+            color: #5b8ab2; /* Azul suave para el encabezado */
+            margin-bottom: 20px;
+        }
+
+        form {
+            background-color: rgba(91, 138, 178, 0.1); /* Azul suave con transparencia */
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+
+        label {
+            font-size: 1em;
+            color: #5b8ab2; /* Azul suave */
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco con transparencia */
+            font-size: 1em;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 12px;
+            background-color: #5b8ab2; /* Azul claro */
+            border: none;
+            border-radius: 4px;
+            color: white;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #4a7f98; /* Azul más oscuro en hover */
+        }
+
+        p {
+            color: #d9534f; /* Rojo suave para mensajes de error */
+            font-size: 1em;
+            margin-top: 10px;
+        }
+    </style>
 </head>
+
 <body>
-    
-    <h1>Iniciar Sesión - MedicCare</h1>
     <?php
     if(isset($error_message)) {
         echo "<p>$error_message</p>";
