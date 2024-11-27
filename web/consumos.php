@@ -46,7 +46,7 @@ if (!isset($_SESSION["usuario"])) {
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-default">
+<nav class="navbar navbar-default">
         <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -58,15 +58,38 @@ if (!isset($_SESSION["usuario"])) {
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-
-                     <li class="nav-btn"><a href="user.php" class="nav-btn"><i class='glyphicon glyphicon-home'></i> Inicio <span class="sr-only">(current)</span></a></li>
-                    <li class="active"><a href="./elegir_plan.php" class="nav-btn"><i class='glyphicon glyphicon-list-alt'></i> Plan <span class="sr-only">(current)</span></a></li>
+                    <li class="active"><a href="elegir_plan.php" class="nav-btn"><i class='glyphicon glyphicon-list-alt'></i> Plan <span class="sr-only">(current)</span></a></li>
                     <li><a href="modificarPerfil.php" onclick="frmCliente()" class="nav-btn"> <i class='glyphicon glyphicon-user'></i> Mi Perfil</a></li>
-                    <li><a href="../web/login.php" class="nav-btn"><i class='glyphicon glyphicon-off'></i> Cerrar Sección</a></li>
+                    
+                        <ul class="dropdown-menu">
+                            <li><a href="medicamentos.php"><i class='glyphicon glyphicon-heart'></i> Medicamentos</a></li>
+                            <li><a href="reembolso.html"><i class='glyphicon glyphicon-usd'></i> Reembolso</a></li>
+                            <li><a href="#"><i class='glyphicon glyphicon-list-alt'></i> Consultas</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle nav-btn" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class='glyphicon glyphicon-edit'></i> Solicitudes <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="verdependiente.php"><i class='glyphicon glyphicon-user'></i> Dependientes</a></li>
+                            <li><a href="reembolso.html"><i class='glyphicon glyphicon-usd'></i> Reembolso</a></li>
+                            <li><a href="preautorizaciones.php"><i class='glyphicon glyphicon-usd'></i> Solicitar Preautorizaciones</a></li>
+                            <li><a href="solicitarProdcto.php"><i class='glyphicon glyphicon-shopping-cart'></i> Nuevos Productos</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                     <!-- Formulario que enviará una solicitud POST para cerrar sesión -->
+                        <form action="logout.php" method="post" style="display: inline;">
+                        <button type="submit" name="logout" class="nav-btn" style="background: #2889E4 ;  color: white; cursor: pointer; padding-top: 5% ; margin-top: 5% ;border: none">
+                        <i class='glyphicon glyphicon-off'></i> Cerrar Sesión
+                        </button>
+                    </form>
+                </li>
+
                 </ul>
             </div>
         </div>
     </nav>
+
 <body>
     <div class="container">
         <h2>Consumo de Seguro MedicCare</h2>
