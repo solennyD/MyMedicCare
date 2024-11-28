@@ -44,6 +44,10 @@ if (!isset($_SESSION["usuario"])) {
         h2 {
             color: #337ab7;
         }
+
+        .navbar-default .navbar-nav > li > a {
+    color: #ecf0f1;
+}
         p {
             font-size: 16px;
         }
