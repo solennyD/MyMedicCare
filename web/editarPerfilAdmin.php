@@ -43,9 +43,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
     if ($conn->query($sql) === TRUE) {
-        echo "¡Perfil actualizado correctamente!";
+        echo "<h3 style= 'background: #90EE90 ; text-align: center;';> ¡Perfil actualizado correctamente!</h3>";
     } else {
-        echo "Error al actualizar el perfil: " . $conn->error;
+        echo " <h3 style= 'background: red ; text-align: center;';> ¡Error al actualizar el perfil!</h3>" . $conn->error;
     }
 } else {
     // Obtener los datos del usuario de la base de datos
@@ -92,6 +92,7 @@ $conn->close();
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
         }
+        
         .container {
             margin-top: 50px;
             padding: 20px;
