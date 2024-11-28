@@ -31,15 +31,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Recibir datos del formulario
     $nombre = $_POST['nombre'];
     $apellido = $_POST['apellido'];
-    $cedula = $_POST['cedula'];
+   // $cedula = $_POST['cedula'];
     $puesto = $_POST['puesto'];
     $fecha_nacimiento = $_POST['fecha_nacimiento'];
-    $correo_electronico = $_POST['Correo_Electronico'];
+    $correo_electronico = $_POST['correo'];
     $contrasena = $_POST['contrasena']; 
   
 
     // Actualizar los datos en la base de datos
-    $sql = "UPDATE administrador SET nombre='$nombre', apellido='$apellido', puesto='$puesto', cedula='$cedula', fecha_nacimiento='$fecha_nacimiento', Correo_Electronico='$correo_electronico' contrasena='$contrasena'WHERE cedula='$cedula'";
+    $sql = "UPDATE administrador SET nombre='$nombre', apellido='$apellido', puesto='$puesto' /*, cedula='$cedula'*/, fecha_nacimiento='$fecha_nacimiento', Correo_Electronico='$correo_electronico', contrasena='$contrasena' WHERE cedula='$cedula'";
+
 
     if ($conn->query($sql) === TRUE) {
         echo "¡Perfil actualizado correctamente!";
@@ -55,10 +56,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $row = $result->fetch_assoc();
         $nombre = $row["Nombre"];
         $apellido = $row["Apellido"];
-        $cedula = $row["Cedula"];
+       // $cedula = $row["Cedula"];
         $puesto = $row["Puesto"];
         $fecha_nacimiento = $row["Fecha_Nacimiento"];
-        $correo = $row["Correo_Electronico"];
+        $correo_electronico = $row["Correo_Electronico"];
         $contrasena = $row["Contrasena"];
         
     }else{
@@ -211,8 +212,10 @@ $conn->close();
             <input type="text" id="nombre" name="nombre" value="<?php echo $nombre; ?>">
             <label for="apellido">Apellido:</label>
             <input type="text" id="apellido" name="apellido" value="<?php echo $apellido; ?>">
+            <label for="puesto">Puesto:</label>
+            <input type="text" id="puesto" name="puesto" value="<?php echo $puesto; ?>">
             <label for="correo">Correo:</label>
-            <input type="email" id="correo" name="correo" value="<?php echo $correo; ?>">
+            <input type="email" id="correo" name="correo" value="<?php echo $correo_electronico; ?>">
             <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
             <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" value="<?php echo $fecha_nacimiento; ?>">
             <label for="contrasena">Contraseña:</label>
