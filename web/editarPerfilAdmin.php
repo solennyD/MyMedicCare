@@ -34,13 +34,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $cedula = $_POST['cedula'];
     $puesto = $_POST['puesto'];
     $fecha_nacimiento = $_POST['fecha_nacimiento'];
-    $sexo = $_POST['sexo'];
-    $correo = $_POST['correo'];
+    $correo_electronico = $_POST['Correo_Electronico'];
     $contrasena = $_POST['contrasena']; 
   
 
     // Actualizar los datos en la base de datos
-    $sql = "UPDATE administrador SET nombre='$nombre', apellido='$apellido', cedula='$cedula', puesto='$puesto', fecha_nacimiento='$fecha_nacimiento', sexo='$sexo', correo='$correo' contrasena='$contrasena',WHERE cedula='$cedula'";
+    $sql = "UPDATE administrador SET nombre='$nombre', apellido='$apellido', puesto='$puesto', cedula='$cedula', fecha_nacimiento='$fecha_nacimiento', Correo_Electronico='$correo_electronico' contrasena='$contrasena'WHERE cedula='$cedula'";
 
     if ($conn->query($sql) === TRUE) {
         echo "¡Perfil actualizado correctamente!";
@@ -54,14 +53,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($result->num_rows > 0) {
         $row = $result->fetch_assoc();
-        $nombre = $row["nombre"];
-        $apellido = $row["apellido"];
-        $cedula = $row["cedula"];
-        $puesto = $row["puesto"];
-        $fecha_nacimiento = $row["fecha_nacimiento"];
-        $sexo = $row["sexo"];
-        $correo = $row["correo"];
-        $contrasena = $row["contrasena"];
+        $nombre = $row["Nombre"];
+        $apellido = $row["Apellido"];
+        $cedula = $row["Cedula"];
+        $puesto = $row["Puesto"];
+        $fecha_nacimiento = $row["Fecha_Nacimiento"];
+        $correo = $row["Correo_Electronico"];
+        $contrasena = $row["Contrasena"];
+        
+    }else{
         echo "No se encontró el usuario";
     }
 }
@@ -217,8 +217,7 @@ $conn->close();
             <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" value="<?php echo $fecha_nacimiento; ?>">
             <label for="contrasena">Contraseña:</label>
             <input type="password" id="contrasena" name="contrasena" value="<?php echo $contrasena; ?>">
-            <label for="telefono">Teléfono:</label>
-            <input type="text" id="telefono" name="telefono" value="<?php echo $telefono; ?>">
+            
             <input type="submit" value="Actualizar Perfil">
         </form>
     </div>
