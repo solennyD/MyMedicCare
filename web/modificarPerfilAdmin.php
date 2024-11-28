@@ -143,8 +143,8 @@ if(isset($_SESSION["cedula"])) {
     ?>
     <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
         <h1>Iniciar Sesión - Administrador</h1>
-        <label for="cedula_pasaporte"><h3>Cédula:</h3></label>
-        <input type="text" id="cedula_pasaporte" name="cedula_pasaporte" required><br><br>
+        <label for="cedula"><h3>Cédula:</h3></label>
+        <input type="text" id="cedula" name="cedula" required><br><br>
         <input type="submit" value="Iniciar Sesión">
     </form>
 </body>

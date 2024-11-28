@@ -99,7 +99,7 @@ $consulta_nombre->close();
             </div>
  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="modificarPerfil.php" class="nav-btn"><i class='glyphicon glyphicon-user'></i> Perfil<span class="sr-only">(current)</span></a></li>
+                    <li class="active"><a href="modificarPerfilAdmin.php" class="nav-btn"><i class='glyphicon glyphicon-user'></i> Perfil<span class="sr-only">(current)</span></a></li>
                     
               
                     <li><a href="usuario.php" onclick="frmCliente()" class="nav-btn"> <i class='glyphicon glyphicon-user'></i> Usuarios</a></li>
