@@ -19,14 +19,20 @@
             text-align: center;
             margin: 0;
             padding: 0;
+            background-color: #87CEEB; /* Azul claro muy suave */
         }
         h2 {
             margin-top: 50px;
         }
         form {
             display: inline-block;
-            text-align: left;
             margin-top: 20px;
+            background-color: #ADD8E6;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 500px;
+            text-align: center;
         }
         label {
             display: block;
@@ -66,7 +72,7 @@
             </div>
  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="modificarPerfil.php" class="nav-btn"><i class='glyphicon glyphicon-user'></i> Perfil<span class="sr-only">(current)</span></a></li>
+                    <li class="active"><a href="modificarPerfilAdmin.php" class="nav-btn"><i class='glyphicon glyphicon-user'></i> Perfil<span class="sr-only">(current)</span></a></li>
                     
               
                     <li><a href="usuario.php" onclick="frmCliente()" class="nav-btn"> <i class='glyphicon glyphicon-user'></i> Usuarios</a></li>
@@ -115,10 +121,12 @@
     </nav>
    </div>
 <body>
+
+    <div>
     <h2>Administración de Historial Médico</h2>
 
-    <h3>Agregar Registro de Historial Médico</h3>
     <form action="agregar_historial_medico.php" method="post">
+        <h4>Agregar Registro de Historial Médico</h4>
         <label for="asegurado_id">ID del Asegurado:</label>
         <input type="text" id="asegurado_id" name="asegurado_id" required><br>
         
@@ -131,8 +139,9 @@
         <input type="submit" value="Agregar">
     </form>
 
-    <h3>Eliminar Registro de Historial Médico</h3>
+   <br>
     <form action="eliminar_historial_medico.php" method="post">
+        <h4>Eliminar Registro de Historial Médico</h4>
         <label for="id_eliminar">ID del Registro a Eliminar:</label>
         <input type="text" id="id_eliminar" name="id_eliminar" required><br>
         
