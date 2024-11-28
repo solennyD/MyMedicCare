@@ -40,9 +40,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $sql = "UPDATE usuario SET nombre='$nombre', apellido='$apellido', correo='$correo', fecha_nacimiento='$fecha_nacimiento', contrasena='$contrasena', telefono='$telefono' WHERE cedula_pasaporte='$cedula_pasaporte'";
 
     if ($conn->query($sql) === TRUE) {
-        echo "¡Perfil actualizado correctamente!";
+      echo "<h3 style= 'background: #90EE90 ; text-align: center;';> ¡Perfil actualizado correctamente!</h3>";
     } else {
-        echo "Error al actualizar el perfil: " . $conn->error;
+        echo " <h3 style= 'background: red ; text-align: center;';> ¡Error al actualizar el perfil!</h3>". $conn->error;
     }
 } else {
     // Obtener los datos del usuario de la base de datos
