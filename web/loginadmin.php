@@ -59,7 +59,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
 </head>
 <body>
 <div>
-    <a href="index.html" class="btn primary" style="display: inline-block; background-color: #4FC3F7; color: white; padding: 5px 20px; text-decoration: none; font-size: 16px; font-family: Arial, sans-serif; border-radius: 5px; border: 2px solid #007BB5; text-align: center; cursor: pointer; transition: background-color 0.3s ease, transform 0.2s ease;">
+    <a href="index.html" class="btn primary" style="display: inline-block; color: black; padding: 5px 20px; text-decoration: none; font-size: 16px; font-family: Arial, sans-serif; border-radius: 5px; border: 2px solid #007BB5; text-align: center; ">
         INICIO
     </a>
 </div>
