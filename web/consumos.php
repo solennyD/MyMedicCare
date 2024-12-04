@@ -84,17 +84,10 @@ if (!isset($_SESSION["usuario"])) {
                             <li><a href="verdependiente.php"><i class='glyphicon glyphicon-user'></i> Dependientes</a></li>
                             <li><a href="reembolso.html"><i class='glyphicon glyphicon-usd'></i> Reembolso</a></li>
                             <li><a href="preautorizaciones.php"><i class='glyphicon glyphicon-usd'></i> Solicitar Preautorizaciones</a></li>
-                            <li><a href="solicitarProdcto.php"><i class='glyphicon glyphicon-shopping-cart'></i> Nuevos Productos</a></li>
+                            <li><a href="./solicitarProdcto.php"><i class='glyphicon glyphicon-shopping-cart'></i> Nuevos Productos</a></li>
                         </ul>
                     </li>
-                    <li>
-                     <!-- Formulario que enviará una solicitud POST para cerrar sesión -->
-                        <form action="logout.php" method="post" style="display: inline;">
-                        <button type="submit" name="logout" class="nav-btn" style="background: #2889E4 ;  color: white; cursor: pointer; padding-top: 5% ; margin-top: 5% ;border: none">
-                        <i class='glyphicon glyphicon-off'></i> Cerrar Sesión
-                        </button>
-                    </form>
-                </li>
+                    <li><a href="../web/loginAdmin.php" class="nav-btn"><i class='glyphicon glyphicon-off'></i> Cerrar Sección</a></li>
 
                 </ul>
             </div>

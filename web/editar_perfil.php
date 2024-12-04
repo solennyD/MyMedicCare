@@ -143,14 +143,7 @@ $conn->close();
                     <li class="active"><a href="user.php" class="nav-btn"><i class='glyphicon glyphicon-start-alt'></i> Inicio <span class="sr-only">(current)</span></a></li>
                     <li><a href=""  class="nav-btn"> <i class='glyphicon glyphicon-user'></i> Mi Perfil</a></li>
                     
-                    <li>
-                     <!-- Formulario que enviará una solicitud POST para cerrar sesión -->
-                        <form action="logout.php" method="post" style="display: inline;">
-                        <button type="submit" name="logout" class="nav-btn" style="background: #2889E4 ;  color: white; cursor: pointer; padding-top: 5% ; margin-top: 5% ;border: none">
-                        <i class='glyphicon glyphicon-off'></i> Cerrar Sesión
-                        </button>
-                    </form>
-                </li>
+                    <li><a href="../web/loginAdmin.php" class="nav-btn"><i class='glyphicon glyphicon-off'></i> Cerrar Sección</a></li>
                 </ul>
             </div>
         </div>

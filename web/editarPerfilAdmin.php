@@ -190,9 +190,10 @@ $conn->close();
     </ul>
 </li>
 
-                    
+<li><a href="../web/loginAdmin.php" class="nav-btn"><i class='glyphicon glyphicon-off'></i> Cerrar Sección</a></li>  
+<!--
 <li>
-                     <!-- Formulario que enviará una solicitud POST para cerrar sesión -->
+                      Formulario que enviará una solicitud POST para cerrar sesión 
                         <form action="logout.php" method="post" style="display: inline;">
                         <button type="submit" name="logout" class="nav-btn" style="background: #1A76D1 ;  color: white; cursor: pointer; padding-top: 5% ; margin-top: 5% ;border: none">
                         <i class='glyphicon glyphicon-off'></i> Salir
@@ -200,7 +201,7 @@ $conn->close();
                     </form>
                 </li>
 
-                </ul>
+                </ul> -->
        
             </div>
         </div>

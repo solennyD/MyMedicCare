@@ -89,7 +89,7 @@ $result = $stmt->get_result();
                     <li class="active"><a href="./pagina_de_administrador.php" class="nav-btn"><i class='glyphicon glyphicon-list-alt'></i> Inicio <span class="sr-only">(current)</span></a></li>
                     
               
-                    <li><a href="" onclick="frmCliente()" class="nav-btn"> <i class='glyphicon glyphicon-user'></i> Mi Perfil</a></li>
+                    <li><a href="editar_perfil.php" onclick="frmCliente()" class="nav-btn"> <i class='glyphicon glyphicon-user'></i> Mi Perfil</a></li>
                     <li><a href="polizas.php" onclick="frmCliente()" class="nav-btn"> <i class='glyphicon glyphicon-user'></i>  Mis Polizas</a></li>
 
                    

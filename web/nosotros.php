@@ -70,8 +70,7 @@
             margin-top: 10px;
         }
        
-        }
-        
+    
         .logo-container {
             background-color: white;
             padding: 20px;
@@ -84,6 +83,8 @@
             max-width: 500%;
             height: 70%;
             margin-top: -20px;
+
+        }
        
         .navbar-nav {
             margin-top: 10px;

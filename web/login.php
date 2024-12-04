@@ -44,17 +44,84 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <title>Iniciar Sesión</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/png" href="../img/imag.png"/>
-    <link rel="stylesheet" href="../css/bootstrap-responsive.css">
-    <link rel="stylesheet" href="../css/bootstrap-responsive.min.css">
-    <link rel="stylesheet" href="../css/bootstrap.css">
-    <link rel="stylesheet" href="../css/style.css">
+ <!--   <link rel="stylesheet" href="../css/bootstrap-responsive.css">
+   <link rel="stylesheet" href="../css/bootstrap-responsive.min.css">
+   <link rel="stylesheet" href="../css/bootstrap.css">
+   <link rel="stylesheet" href="../css/style.css"> -->
     <script src="../js/bootstrap.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Varela+Round">
+
+    <style>
+        body{
+            background-image:url(https://img.freepik.com/vector-premium/fondo-abstracto-azul-salud_66029-25.jpg?semt=ais_hybrid);
+            background-size: cover;
+            padding: 5%;
+        }
+    #login {
+        background-color: rgba(176, 224, 230, 0.2); /* Azul transparente */
+        border: 2px solid #007BB5; /* Bordes rojo clarito */
+        padding: 20px;
+        border-radius: 10px;
+        max-width: 400px;
+        margin: auto;
+        text-align: center; /* Centra el contenido dentro del div */
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    #login h1 {
+        color: #007BB5; /* Azul oscuro para el texto */
+    }
+
+    #login h1 img {
+        display: block;
+        margin: 0 auto; /* Centra la imagen del logo */
+        max-width: 200px;
+        height: auto;
+    }
+
+    #login input[type="text"],
+    #login input[type="password"],
+    #login input[type="submit"] {
+        width: calc(100% - 20px);
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #FF9999; /* Bordes rojo clarito */
+        border-radius: 5px;
+    }
+
+    #login input[type="submit"] {
+        background-color: #4FC3F7; /* Azul claro vibrante */
+        color: white;
+        cursor: pointer;
+        border: none;
+    }
+
+    #login input[type="submit"]:hover {
+        background-color: #007BB5; /* Azul más oscuro al pasar el mouse */
+    }
+
+    .buttonAc a {
+        color: #007BB5;
+        text-decoration: none;
+    }
+
+    .buttonAc a:hover {
+        text-decoration: underline;
+    }
+</style>
+
+
 </head>
 
 <body>
+<div>
+    <a href="index.html" class="btn primary" style="display: inline-block; background-color: #4FC3F7; color: white; padding: 5px 20px; text-decoration: none; font-size: 16px; font-family: Arial, sans-serif; border-radius: 5px; border: 2px solid #007BB5; text-align: center; cursor: pointer; transition: background-color 0.3s ease, transform 0.2s ease;">
+        INICIO
+    </a>
+</div>
 
+  
 <header class="header">
       <!-- Header Inner -->
       <div class="header-inner">
@@ -63,15 +130,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="row">
               <div class="col-lg-3 col-md-3 col-12">
                 <!-- Start Logo -->
-                <div class="button">
-                  <a href="index.html" class = "btn primary">INICIO</a>
-                </div>
+               
        
+   
     <div id="login">
-    <div id="login">
-        <h2><span class="fontawesome-lock"></span>Iniciar Sesión</h2>
+        <h1><span class="fontawesome-lock"></span>Iniciar Sesión</h1>
         <form action="login.php" method="POST"> 
-            <fieldset>
+            
                 <h1><img src="../img/logo.jpeg" alt=""></h1>
                 <p><label for="text">Cédula o Pasaporte</label></p>
                 <p><input type="text" name="cedula_pasaporte" placeholder="" required autofocus/></p>
@@ -85,7 +150,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <br>
                 <div class="buttonAc">
                 <a href="registro.php" class="btn primary">¿Aún no tienes una cuenta?</a> 
-            </fieldset>
+            
 </header>
             <div class="error"><?php echo isset($error) ? $error : ""; ?></div>
         </form>

@@ -113,11 +113,11 @@ $consulta_nombre->close();
     <ul class="dropdown-menu">
         <li><a href="ver_clinicas.php">Clinicas</a></li>
         <li><a href="centroMedicos.php">Centros Medicos</a></li>
-        <li><a href="agregarClinica.html">Farmacias</a></li>
+        <li><a href="./farmacias.html">Farmacias</a></li>
          <li><a href="prestador.php">Prestadores</a></li>
           <li><a href="verProveedore.php">Proveedores Medicos</a></li>
            <li><a href="agregarClinica.html">Tratamientos Medicos</a></li>
-            <li><a href="agregarClinica.html">Plan</a></li>
+            <li><a href="./mi_plan.php">Plan</a></li>
              <li><a href="agregarClinica.html">Plan de usuarios</a></li>
        
     </ul>
@@ -130,6 +130,7 @@ $consulta_nombre->close();
                             <li><a href="visualizar_solicitud_reembolso.php"><i class='glyphicon glyphicon-usd'></i> ver solicitud de Reembolso</a></li>
                             <li><a href="visualizar_preautorizaciones.php"><i class='glyphicon glyphicon-usd'></i> Solicitud Preautorizaciones</a></li>
                             <li><a href="visualizar_nuevos_productos.php"><i class='glyphicon glyphicon-shopping-cart'></i> Solicitud de Nuevos Productos</a></li>
+                            
                         </ul>
                     </li>
 
@@ -143,15 +144,16 @@ $consulta_nombre->close();
     </ul>
 </li>
 
-                    
-<li>
-                     <!-- Formulario que enviará una solicitud POST para cerrar sesión -->
+<li><a href="../web/loginAdmin.php" class="nav-btn"><i class='glyphicon glyphicon-off'></i> Cerrar Sección</a></li>
+ <!--                   
+<li> 
+                      Formulario que enviará una solicitud POST para cerrar sesión
                         <form action="logout.php" method="post" style="display: inline;">
                         <button type="submit" name="logout" class="nav-btn" style="background: #1A76D1 ;  color: white; cursor: pointer; padding-top: 5% ; margin-top: 5% ;border: none">
                         <i class='glyphicon glyphicon-off'></i> Salir
                         </button>
                     </form>
-                </li>
+                </li> -->
 
                 </ul>
        
