@@ -115,7 +115,7 @@ button,
 html input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-	-webkit-appearance: button;
+	/*-webkit-appearance: button;*/
 	cursor: pointer;
 }
 button[disabled],
@@ -591,7 +591,9 @@ Preloader Area CSS
 .pagination .pagination-list li a i{
 	font-size:15px;
 }
-.pagination .pagination-list li a i{}
+
+/*
+.pagination .pagination-list li a i{}*/
 .blog-grids.pagination{
 	margin-top:50px;
 	text-align:center;
