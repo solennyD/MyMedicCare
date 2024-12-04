@@ -137,7 +137,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <h1><span class="fontawesome-lock"></span>Iniciar Sesión</h1>
         <form action="login.php" method="POST"> 
             
-                <h1><img src="../img/logo.jpeg" alt=""></h1>
+                <h1><img src="../img/logo2.png" alt="" style="width:80%"></h1>
                 <p><label for="text">Cédula o Pasaporte</label></p>
                 <p><input type="text" name="cedula_pasaporte" placeholder="" required autofocus/></p>
                 <p><label for="password">Contraseña</label></p>

@@ -78,7 +78,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
         <h2><span class="fontawesome-lock"></span>Sesión Administrador</h2>
         <form action="login_administrador.php" method="POST"> 
             <fieldset>
-                <h1><img src="../img/logo.jpeg" alt=""></h1>
+                <h1><img src="../img/logo2.png" alt="" style="width: 80%;"></h1>
                 <p><label for="text">Cédula</label></p>
                 <p><input type="text" name="cedula_pasaporte" placeholder="" required autofocus/></p>
                 <p><label for="password">Contraseña</label></p>
