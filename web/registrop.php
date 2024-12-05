@@ -1,9 +1,9 @@
 <?php
 // Conexión a la base de datos del archivo registro
 
-$servername = "localhost";
-$username = "root";
-$password = "";
+$servername = "mediccare.cf8oqyo8g9xv.us-east-2.rds.amazonaws.com";
+$username = "admin";
+$password = "12345678";
 $dbname = "mediccare";
 
 $conn = new mysqli($servername, $username, $password, $dbname);

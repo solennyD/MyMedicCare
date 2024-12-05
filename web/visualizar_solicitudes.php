@@ -12,7 +12,7 @@ if (!isset($_SESSION["usuario"])) {
 $cedula_usuario = $_SESSION["usuario"];
 
 // Establecer conexión a la base de datos
-$conexion = new mysqli("localhost", "root", "", "mediccare");
+$conexion = new mysqli("mediccare.cf8oqyo8g9xv.us-east-2.rds.amazonaws.com", "admin", "12345678", "mediccare");
 
 if ($conexion->connect_error) {
     die("Error de conexión: " . $conexion->connect_error);

@@ -35,9 +35,9 @@
         <h2>Datos de la Cita</h2>
         <?php
         
-        $servername = "localhost";
-        $username = "root";
-        $password = "";
+        $servername = "mediccare.cf8oqyo8g9xv.us-east-2.rds.amazonaws.com";
+        $username = "admin";
+        $password = "12345678";
         $dbname = "mediccare";
 
         $conn = new mysqli($servername, $username, $password, $dbname);

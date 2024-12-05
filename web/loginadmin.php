@@ -4,7 +4,7 @@ session_start();
 // Manejo de inicio de sesión
 if ($_SERVER["REQUEST_METHOD"] == "POST") 
 {
-    $conexion = new mysqli("localhost", "root", "", "mediccare");
+    $conexion = new mysqli("mediccare.cf8oqyo8g9xv.us-east-2.rds.amazonaws.com", "admin", "12345678", "mediccare");
 
     if ($conexion->connect_error) {
         die("Error de conexión: " . $conexion->connect_error);

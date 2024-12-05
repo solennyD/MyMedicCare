@@ -14,7 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["id_producto"])) {
     $id_producto = $_POST["id_producto"];
 
     // Establecer conexión a la base de datos
-    $conexion = new mysqli("localhost", "root", "", "mediccare");
+    $conexion = new mysqli("mediccare.cf8oqyo8g9xv.us-east-2.rds.amazonaws.com", "admin", "12345678", "mediccare");
 
     if ($conexion->connect_error) {
         die("Error de conexión: " . $conexion->connect_error);
@@ -36,7 +36,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["id_producto"])) {
 }
 
 // Consulta SQL para obtener todos los nuevos productos
-$conexion = new mysqli("localhost", "root", "", "mediccare");
+$conexion = new mysqli("mediccare.cf8oqyo8g9xv.us-east-2.rds.amazonaws.com", "admin", "12345678", "mediccare");
 
 if ($conexion->connect_error) {
     die("Error de conexión: " . $conexion->connect_error);

@@ -21,7 +21,7 @@ if (isset($_SESSION['nuevo_dependiente'])) {
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (isset($_POST['aprobar'])) {
         // Acción de aprobar: Agregar el dependiente a la base de datos
-        $conexion = new mysqli("localhost", "root", "", "mediccare");
+        $conexion = new mysqli("mediccare.cf8oqyo8g9xv.us-east-2.rds.amazonaws.com", "admin", "12345678", "mediccare");
 
         if ($conexion->connect_error) {
             die("Error de conexión: " . $conexion->connect_error);
